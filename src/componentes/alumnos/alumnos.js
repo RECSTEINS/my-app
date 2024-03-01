@@ -25,6 +25,16 @@ function Alumnos(){
         ConsultarAPI();
     },[]);
 
+    const deleteAlumno = async(id) =>{
+        try{
+            const response = await ClienteAxios.delete('/alumnos/'+id+'');
+            alert("Alumno Eliminado");
+            window.location.reload();
+        }catch(error){
+            console.error(error);
+        }
+    };
+
     return(
         <Fragment>
         
@@ -47,7 +57,7 @@ function Alumnos(){
                     <i class="fas fa-pen-alt"></i>
                     Editar Alumno
                 </a>
-                <button type="button" class="btn btn-rojo btn-eliminar">
+                <button type="button" class="btn btn-rojo btn-eliminar" onClick={() => deleteAlumno(alumno.UNAL_ID)}>
                     <i class="fas fa-times"></i>
                     Eliminar Alumno
                 </button>
