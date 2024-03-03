@@ -1,19 +1,80 @@
 import React from "react";
-//Para ruta perfomance
 import {Link} from 'react-router-dom';
 
 function Navigation(){
     return(
-        <aside class="sidebar col-3">
-            <h2>Administración</h2>
+        <aside class="navigation">
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <span class="title">Restaurante</span>
+                    </a>
+                
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Dashboard</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Customers</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Messages</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Help</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Settings</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Password</Link>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <Link to={'/proveedores'} class="title">Sign Out</Link>
+                    </a>
+                </li>
 
-            <nav class="navegacion">
-                <Link to={"/alumnos"} class="alumnos">Alumnos</Link>
-                <Link to={"/carreras"} class="carreras">Carreras</Link>
-                <Link to={"/calificaciones"} class="calificaciones">Calificaciones</Link>
-            </nav>
+
+            </ul>
         </aside>
-    )
+    )   
 }
 
 export default Navigation;
