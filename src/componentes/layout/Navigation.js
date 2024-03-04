@@ -19,7 +19,7 @@ function Navigation(){
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
-                        <Link to={'/proveedores'} class="title">Dashboard</Link>
+                        <Link to={'/proveedores'} class="title">Proveedores</Link>
                     </a>
                 </li>
                 <li>
@@ -27,7 +27,7 @@ function Navigation(){
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
-                        <Link to={'/proveedores'} class="title">Customers</Link>
+                        <Link to={'/productos'} class="title">Productos</Link>
                     </a>
                 </li>
                 <li>
