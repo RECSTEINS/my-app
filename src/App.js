@@ -1,16 +1,10 @@
-//import logo from './logo.svg';
 import React, { Fragment } from 'react';
 import Header from '../src/componentes/layout/Header';
-import Navigation from '../src/componentes/layout/Navigation';
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import Alumnos from '../src/componentes/alumnos/alumnos';
 import Calificaciones from '../src/componentes/calificaciones/calificaciones';
 import Carreras from '../src/componentes/carreras/carreras';
 import NuevoAlumno from './componentes/alumnos/nuevoAlumno';
-import Chat from './componentes/chat/chat';
-import Login from './componentes/chat/login';
-//import "bootstrap/dist/css/bootstrap.min.css";
-//import {Container} from "react-bootstrap";
 
 
 /*import './App.css';
@@ -32,21 +26,17 @@ function App(){
     <Router>
       <Fragment>
         <Header/>
-        <div class="grid contenedor contenido-principal">
         <Navigation/>
-          <main class="caja-contenido col-9">
+          <main class="main">
             <Routes>
               <Route path='/alumnos' element={<Alumnos/>}/>
               <Route path='/calificaciones' element={<Calificaciones/>}/>
               <Route path='/carreras' element={<Carreras/>}/>
               <Route path='/nuevoAlumno' element={<NuevoAlumno/>}/>
-
-              
             </Routes>
           </main>
-        </div>
-    </Fragment>
-</Router>
+      </Fragment>
+    </Router>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-//Para ruta perfomance
 import {Link} from 'react-router-dom';
 
 function Navigation(){
@@ -11,10 +10,9 @@ function Navigation(){
                 <Link to={"/alumnos"} class="alumnos">Alumnos</Link>
                 <Link to={"/carreras"} class="carreras">Carreras</Link>
                 <Link to={"/calificaciones"} class="calificaciones">Calificaciones</Link>
-                <Link to={"/login"} class="login">Login</Link>
             </nav>
         </aside>
-    )
+    )   
 }
 
 export default Navigation;
