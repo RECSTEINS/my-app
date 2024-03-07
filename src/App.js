@@ -7,6 +7,10 @@ import Alumnos from '../src/componentes/alumnos/alumnos';
 import Calificaciones from '../src/componentes/calificaciones/calificaciones';
 import Carreras from '../src/componentes/carreras/carreras';
 import NuevoAlumno from './componentes/alumnos/nuevoAlumno';
+import Chat from './componentes/chat/chat';
+import Login from './componentes/chat/login';
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import {Container} from "react-bootstrap";
 
 
 /*import './App.css';
@@ -36,6 +40,8 @@ function App(){
               <Route path='/calificaciones' element={<Calificaciones/>}/>
               <Route path='/carreras' element={<Carreras/>}/>
               <Route path='/nuevoAlumno' element={<NuevoAlumno/>}/>
+
+              
             </Routes>
           </main>
         </div>
